@@ -1,0 +1,23 @@
+{
+  "name": "2020-04-22-noisemaker",
+  "version": "1.0.0",
+  "description": "Object which makes sound",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingMerc/2020-04-22-Noisemaker.git"
+  },
+  "author": "CodingMerc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingMerc/2020-04-22-Noisemaker/issues"
+  },
+  "homepage": "https://github.com/CodingMerc/2020-04-22-Noisemaker#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-social": "^5.1.1",
+  }
+}
