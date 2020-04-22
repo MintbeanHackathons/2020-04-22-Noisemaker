@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  background-color: darkcyan;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 40px;
+  height: 80px;
+  width: 80px;
+  background-color: palegoldenrod;
+  padding: 10px;
+  margin: 20px;
+  border: 0;
+  color: black;
+  box-shadow: 5px 5px 5px rgba(241, 110, 70, 0.3);
+}
+
+button#synth {
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+  background-color: palegreen;
+}
+
+button:hover {
+  background-color: gold;
+}
