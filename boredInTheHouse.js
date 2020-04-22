@@ -14,17 +14,18 @@ track.connect(audioContext.destination)
 // creates play button
 const playButton = document.querySelector('button')
 
-playButton.addEventListener('click', function() { // allows play and pause
-  if(audioContext.state === 'suspended') {
-    audioContext.resume()
+playButton.addEventListener('click', function() { // allows play or pause
+  if (audioContext.state === 'suspended') {
+      audioContext.resume();
   }
-  if(this.dataset.playing === 'false') {
-    audioElement.play()
-    this.dataset.playing = 'true'
-  } else if(this.dataset.playing === 'true') {
-    audioElement.pause()
-    this.dataset.playing === 'false'
+  if (this.dataset.playing === 'false') {
+      audioElement.play();
+      this.dataset.playing = 'true';
+  } else if (this.dataset.playing === 'true') {
+      audioElement.pause();
+      this.dataset.playing = 'false';
   }
+
 }, false)
 
 audioElement.addEventListener('ended', () => { // listens for song ending
