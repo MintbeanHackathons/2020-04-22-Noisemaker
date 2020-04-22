@@ -4,11 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
 function App() {
+  const speak = () => {
+    console.log('clicked!');
+  };
+
   return (
     <div className='container'>
       <div className='text'>Hit me!</div>
-      <div>
-        <Button variant='primary'>Primary</Button>
+      <div className='button'>
+        <Button variant='primary' onClick={speak}>
+          #music
+        </Button>
       </div>
     </div>
   );
