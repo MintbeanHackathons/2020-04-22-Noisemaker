@@ -1,0 +1,12 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .images img {
+    width: 200px;
+    height: 300px;
+  }
+}
