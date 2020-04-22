@@ -221,7 +221,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Type to begin. Press buttons below for background music</h1>
+      <h1>Type to begin. Press buttons below for background musics</h1>
       <div id="background-sounds-container">
         {backgroundSounds.map((filename,i) => <BackgroundSounds filename={filename.filename} name={filename.name}/>)}
       </div>
