@@ -1,3 +1,13 @@
+body {
+  text-align: center;
+}
 .make-noise {
-    padding: 20px 40px;
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  border-radius: 15px;
+  padding: 20px 40px;
+  color: white;
+  font-size: 24px;
+  transition: width 2s, height 2s;
 }
