@@ -10,6 +10,9 @@
 	  background-color: #85F697;
 	   margin: 0;
 	}
+	h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	}
 	.flower {
 		height: 50px;
 		width: 50px;
@@ -29,12 +32,11 @@
 		height:50px;
 		position:fixed;
 	}
-}
 	</style>
   </head>
   <body>
 	<h1>Floating Pollen Flower</h1>
-    <div class="container" id="container" onclick="playSound()">
+    <div class="container" id="container" onclick="playSound(this.id)">
 		<img class="flower" src="flower.png" />
 </div>
   </body>
