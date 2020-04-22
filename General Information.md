@@ -13,7 +13,7 @@ See [Readme](./Readme.md#prize)
 Links:
 
 * [Twitch](https://www.twitch.tv/mintbeancareerhack)
-* [Slack](https://join.slack.com/t/mintbeanhackathons/shared_invite/zt-cyxqi3jo-dXg1sw3RcZ07andai~Bhww)
+* Discord
 * [Github](https://github.com/MintbeanHackathons)
 
 | Start | End  | Description |
@@ -27,10 +27,10 @@ Links:
 
 ## Your responsibilities as a participant
 
-1. You must be logged onto Slack at all times during the Hackathon.
-1. You must let us know, on Slack, when you've started.
-1. You must let us know, on Slack, when you've finished coding.
-1. You must let us know, on Slack, when you've finished code review.
+1. You must be logged onto Discord at all times during the Hackathon.
+1. You must let us know, on Discord, when you've started.
+1. You must let us know, on Discord, when you've finished coding.
+1. You must let us know, on Discord, when you've finished code review.
 
 ## Getting started.
 
