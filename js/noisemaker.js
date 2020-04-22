@@ -38,3 +38,17 @@ function playSound(idx, options) {
 for (let i = 0; i < notes.length; ++i) {
   loadSound(`../snd/dog_${notes[i]}.mp3`, sounds, i);
 }
+
+function teachSong(notes) {
+  if (notes.length) {
+    const btn = document.getElementById(notes[0])
+    if (btn) {
+      btn.classList.add('show');
+      btn.click()
+    }
+    setTimeout(() => {
+      if (btn) btn.classList.remove('show');
+      teachSong(notes.slice(1))
+    }, 500)
+  }
+}

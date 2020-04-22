@@ -10,15 +10,20 @@
   <main>
     <h1>The Bark-o-phone</h1>
     <div class="keyboard">
-      <div class="key" onclick="playSound(0);">C<br><span>Do</span>🐶</div>
-      <div class="key" onclick="playSound(1);">D<br><span>Re</span>🐶</div>
-      <div class="key" onclick="playSound(2);">E<br><span>Mi</span>🐶</div>
-      <div class="key" onclick="playSound(3);">F<br><span>Fa</span>🐶</div>
-      <div class="key" onclick="playSound(4);">G<br><span>Sol</span>🐶</div>
-      <div class="key" onclick="playSound(5);">A<br><span>La</span>🐶</div>
-      <div class="key" onclick="playSound(6);">B<br><span>Si</span>🐶</div>
-      <div class="key" onclick="playSound(7);">C<br><span>Do</span>🐶</div>
+      <div class="key" id="c4" onclick="playSound(0);">C<br><span>Do</span>🐶</div>
+      <div class="key" id="d4" onclick="playSound(1);">D<br><span>Re</span>🐶</div>
+      <div class="key" id="e4" onclick="playSound(2);">E<br><span>Mi</span>🐶</div>
+      <div class="key" id="f4" onclick="playSound(3);">F<br><span>Fa</span>🐶</div>
+      <div class="key" id="g4" onclick="playSound(4);">G<br><span>Sol</span>🐶</div>
+      <div class="key" id="a4" onclick="playSound(5);">A<br><span>La</span>🐶</div>
+      <div class="key" id="b4" onclick="playSound(6);">B<br><span>Si</span>🐶</div>
+      <div class="key" id="c5" onclick="playSound(7);">C<br><span>Do</span>🐶</div>
     </div>
+
+    <button onclick="teachSong(['c4','c4','g4','g4','a4','a4','g4','*','f4','f4','e4','e4','d4','d4','c4']);">
+      Teach me to play!
+    </button>
+
   </main>
 
   <script src="js/noisemaker.js"></script>
