@@ -8,9 +8,11 @@ h1 { font-family: fantasy; font-size: 3rem; text-align: center; }
 
 .keyboard .key { display: inline-block; width: 5rem; height: 12rem; margin: 0; padding: 0; border: solid thin black; background-color: white; cursor: pointer; font-size: 3rem; text-align: center; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
+.keyboard .key:hover { background-color: #ffc773; }
+
 .keyboard .key span { display: block; font-size: 1rem; }
 
-.keyboard .show { background-color: red; }
+.keyboard .show { background-color: #ffc773; }
 
-button { width: 20%; margin: 1rem 40%; border: solid thin brown; border-radius: 10px; background-color: #ffc773; }
+button { width: 20%; margin: 1rem 40%; border: solid 2px brown; border-radius: 10px; background-color: #ffc773; }
 /*# sourceMappingURL=styles.css.map */
