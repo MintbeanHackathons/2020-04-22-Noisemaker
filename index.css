@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: chartreuse;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
