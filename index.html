@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SirPotato's Noise Maker</title>
+    <!-- Beginning of code for flavicon -->
+    <!-- https://favicon.io/emoji-favicons/musical-note/ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/site.webmanifest" />
+    <!-- link to bulma, a css library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css"
+    />
+    <!-- link to stylesheet for page -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="section has-background-primary">
+      <div class="container">
+        <h1 class="title is-1">
+          Click a Button to Play a Sound
+        </h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="box">
+          <h1 class="title" id="gameOutcome">
+            Guess the correct pattern and win!
+          </h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <button id="button1" class="button is-danger is-large">
+          Sound 1
+        </button>
+        <button id="button2" class="button is-warning is-large">
+          Sound 2
+        </button>
+        <button id="button3" class="button is-info is-large">Sound 3</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Noise Maker</strong> by
+          <a href="http://www.jakeotoole.com">Jake O'Toole</a>. The source code
+          is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+          Tone.js library used for creating sound and Bulma CSS framework used
+          for styling.
+        </p>
+      </div>
+    </footer>
+
+    <!-- script to import Tone.js library from its CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.6.1/Tone.js"></script>
+    <!-- script to link to javascript for page -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
