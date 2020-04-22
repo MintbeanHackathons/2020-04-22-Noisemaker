@@ -7,10 +7,6 @@
   margin-right: auto;
 } */
 
-.tape-controls-play {
-  z-index: 1000;
-}
-
 html {
   background: url(kokomo.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
