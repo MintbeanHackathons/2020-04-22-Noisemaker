@@ -1,66 +1,68 @@
-# Today's Objective: Noisemaker!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Prize
+## Available Scripts
 
-$25 CAD Amazon gift card + bragging rights.
+In the project directory, you can run:
 
-Tip: Read the [General Information Document](General%20Information.md) for more info on how to get started and submit.
+### `yarn start`
 
-## Objective
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Today's objective is to create a music instrument, audio toy, or noisemaker.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Over the years, audio has fallen out of favour for mainstream web applications and websites for a variety of reasons, including accessibility, design, and user experience. 
+### `yarn test`
 
-But rich, interactive web experiences still make full use of Audio APIs. Audio has been a part of browser experiences for decades.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Here are some cool examples of the Web Audio API in action.
+### `yarn build`
 
-* https://keithwhor.com/music/
-* https://stuartmemo.com/qwerty-hancock/
-* https://stuartmemo.com/smashing-magazine/theremin/
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Requirements
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Use the Web Audio API (or a library that wraps around it) to make a musical instrument, audio toy, or a noisemaker.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-The only hard requirement are these: 
-1. Sound must be made in response to user interaction. I.e., you cannot create a simple audio player. Your app must respond to user action events.
-2. You must use the Web Audio API, either directly or indirectly.
+### `yarn eject`
 
-The requirements are intentionally open-ended to allow developers to create an app that suits their skill level.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Here are some examples of applications you might decide to make:
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* (Easy  ) A button that creates a sound when the user clicks on it
-* (Easy  ) An area that creates noise as the user drags their mouse over it (see [Theremin](https://stuartmemo.com/smashing-magazine/theremin/))
-* (Medium) A simple synthesizer
-* (Hard  ) A drum machine
-* (Hard  ) A simple game with interesting audio sound effects
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## If you want to win
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Remember: learning is the main reward here. Competing is fun and encouraged, but optional.
+## Learn More
 
-However, if you'd like to seriously compete, then keep in mind that more complex and interesting applications will stand a better chance of winning.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Suggested Libraries
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-[ToneJS](https://github.com/Tonejs/Tone.js/) is a pretty good library that you can use. There are others, but this is one of the simpler ones.
+### Code Splitting
 
-## Frameworks:
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-We recommend you keep it simple and use what you already know. It is completely possible to build this using jQuery. You can use React, Vue, Angular if you wish.
+### Analyzing the Bundle Size
 
-## Technology Restrictions
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-* Your project must use JavaScript in a browser environment.
+### Making a Progressive Web App
 
-There are no other restrictions.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-## Tips for success:
+### Advanced Configuration
 
-1. The project is intentionally simple so you can focus on code quality.
-1. The requirements are intentionally minimalistic so you can get as creative as you'd like.
-1. You get a LOT of time for code review comments. So you can win even if you feel your project isn't great, simply on the strength of your code review comments!
-1. Keep in mind, 33% of your score is based on aesthetic appeal! So try to make it look nice.
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
