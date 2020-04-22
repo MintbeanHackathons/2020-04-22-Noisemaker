@@ -56,11 +56,14 @@ function App() {
   synth.triggerAttackRelease("C4", "8n");
   const classes = useStyles();
   return (
-    <div className="App">
+    <div className="App" >
       <Container maxWidth={classes.root}>
       {/* <h1>@IsmaelTechNow Noise Toy </h1> */}
       <Typography variant="h1" gutterBottom>
       @IsmaelTechNow Noise Toy
+      </Typography>
+      <Typography variant="h4" gutterBottom>
+      Now set up to work with mouse press corresponing button. In future iteration will use keyboard keys.
       </Typography>
       <div className={classes.root}>
       <Grid container spacing={6}>
