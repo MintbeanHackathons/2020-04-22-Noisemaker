@@ -37,11 +37,26 @@ const gainNode = audioContext.createGain()
 // connects everything to gainNode
 track.connect(gainNode).connect(audioContext.destination)
 
+// grabs input value
 const volumeControl = document.querySelector('#volume')
 
+// listens for input change
 volumeControl.addEventListener('input', function() {
   gainNode.gain.value = this.value
 }, false)
 
+// creates a panning node to adjust volume of left and right speakers
+const pannerOptions = { pan: 0 }
+const panner = new StereoPannerNode(audioContext, pannerOptions)
 
+// grabs input value
+const pannerControl = document.querySelector('#panner')
+
+// listens for input change
+pannerControl.addEventListener('input', function() {
+  panner.pan.value = this.value
+}, false)
+
+// connects panner to everything
+track.connect(gainNode).connect(panner).connect(audioContext.destination)
 
