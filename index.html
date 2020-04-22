@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Theremin</title>
+	</head>
+	<body>
+		<h1>Theremin</h1>
+
+		<form class="form">
+			<label for="min">Choose a min frequency value:</label>
+			<input type="number" name="min" id="min" />
+
+			<label for="max">Choose a max frequency value:</label>
+			<input type="number" name="max" id="max" />
+
+			<button type="submit" id="submit">Submit</button>
+		</form>
+
+		<div id="theremin"></div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
