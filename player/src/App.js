@@ -1,5 +1,6 @@
 import React from 'react';
-import { Typography, Container, makeStyles, Paper, Grid } from '@material-ui/core';
+import { Typography, Container, makeStyles, Paper, Grid, Button } from '@material-ui/core';
+import { Synth } from "tone";
 
 const useStyles = makeStyles((theme)=>({
   root: {
@@ -24,16 +25,38 @@ function App() {
       @IsmaelTechNow Noise Toy
       </Typography>
       <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={6}>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Paper className={classes.paper}><Button variant="contained" color="primary">
+        Q
+      </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Paper className={classes.paper}><Button variant="contained" color="primary">
+        W
+      </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}>xs</Paper>
+          <Paper className={classes.paper}><Button variant="contained" color="primary">
+        E
+      </Button></Paper>
         </Grid>
+        <Grid item xs>
+          <Paper className={classes.paper}><Button variant="contained" color="primary">
+        U
+      </Button></Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper className={classes.paper}><Button variant="contained" color="primary">
+        I
+      </Button></Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper className={classes.paper}><Button variant="contained" color="primary">
+        O
+      </Button></Paper>
+        </Grid>
+        
       </Grid>
       </div>
       </Container>
