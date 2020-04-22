@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+<meta charset="utf‐8">
+<title> Stan's Audio </title> </head>
+<body> 
+   <h2>C Major scale</h2>
+   <button type='button' onclick="play(0)">Play C </button>
+   <button type='button' onclick="play(1)">Play D </button>
+   <button type='button' onclick="play(2)">Play E </button>
+   <button type='button' onclick="play(3)">Play F </button>
+   <button type='button' onclick="play(4)">Play G </button>
+   <button type='button' onclick="play(5)">Play A </button>
+   <button type='button' onclick="play(6)">Play B </button>
+   <button type='button' onclick="play(7)">Play C </button>
+
+ </body>
+
+   <script>
+      var audioCtx = new (window.AudioContext || window.webkitAudioContext);
+
+      // musical notes frequency list
+      var freq = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25]
+      var sound
+      
+      function play(i) {
+         var sine = audioCtx.createOscillator();
+         sine.frequency.value = freq[i];
+         sine.type = "sawthooth";
+         sine.start()
+         setTimeout(function(){
+            sine.stop();
+         }, 1000); 
+         sine.connect(audioCtx.destination);
+      }
+   
+   </script>
+</html>
