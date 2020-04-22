@@ -8,7 +8,8 @@ Made by Antanas Tricou for a MintBean hackathon.
 
 To run locally:
 
-```git clone https://github.com/APTricou/2020-04-22-Noisemaker.git
+```
+git clone https://github.com/APTricou/2020-04-22-Noisemaker.git
 
 cd 2020-04-22-Noisemaker
 npm install
