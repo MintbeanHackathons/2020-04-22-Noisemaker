@@ -1,7 +1,9 @@
 function main() {
+  // correctAnswer and currentAnswer used for game logic
   const correctAnswer = ["button1", "button3", "button2"];
   let currentAnswer = [];
   const gameOutcomeEl = document.getElementById("gameOutcome");
+
   // handles all the event listeners for the buttons
   function buttonEvents() {
     const button1El = document.getElementById("button1");
@@ -9,17 +11,14 @@ function main() {
     const button3El = document.getElementById("button3");
 
     button1El.addEventListener("click", function () {
-      console.log("button 1");
       bringTheNoise("C4");
       guessingGame("button1");
     });
     button2El.addEventListener("click", function () {
-      console.log("button 2");
       bringTheNoise("C5");
       guessingGame("button2");
     });
     button3El.addEventListener("click", function () {
-      console.log("button 3");
       bringTheNoise("C6");
       guessingGame("button3");
     });
@@ -28,9 +27,9 @@ function main() {
 
   // Contains all the logic for the mini game
   function guessingGame(button) {
-    // if (currentAnswer.length < 3) {
-    //   currentAnswer.push(button);
-    // }
+    // checks the users guess
+    // -- if correct the answer is added to the currentAnswer array
+    // -- if incorrect, the currentAnswer array is set back to an empty array and the user is informed they were wrong
     if (correctAnswer[currentAnswer.length] === button) {
       currentAnswer.push(button);
     } else {
@@ -38,20 +37,20 @@ function main() {
       setTimeout(function () {
         gameOutcomeEl.innerText = "Guess the correct pattern and win!";
       }, 1000);
-      console.log("incorrect pattern");
+      // clear currentAnswer array
       currentAnswer = [];
     }
 
+    // checks if the user has found the correct pattern
+    // -- if correct the user is informed they got it correct.
+    // -- currentAnswer array is cleared
     if (currentAnswer.length === 3) {
       gameOutcomeEl.innerText = "YOU DID IT!";
       setTimeout(function () {
         gameOutcomeEl.innerText = "Guess the correct pattern and win!";
       }, 3000);
-      console.log("YOU DID IT!");
-      greatSuccess();
       currentAnswer = [];
     }
-    console.log(currentAnswer);
   }
 
   // Play a sound using Tone.js and its synth instrument
@@ -63,16 +62,14 @@ function main() {
     synth.triggerAttackRelease(note, "8n");
   }
 
+  // I want to add different sounds for getting the correct pattern and incorrect pattern. I ran out of time to figure out more of the tone api
   //   function greatSuccess() {
-  //     var synth = new Tone.MembraneSynth().toMaster();
+  //     var synth = new Tone.Synth().toDestination();
 
-  //     //create a loop
-  //     var loop = new Tone.Loop(function (time) {
-  //       synth.triggerAttackRelease("C1", "8n", time);
-  //     }, "4n");
-
-  //     //play the loop between 0-2m on the transport
-  //     loop.start(0).stop("2m");
+  //     synth.triggerAttackRelease("C4", 0.5, 0);
+  //     synth.triggerAttackRelease("E4", 0.5, 1);
+  //     synth.triggerAttackRelease("G4", 0.5, 2);
+  //     synth.triggerAttackRelease("B4", 0.5, 3);
   //   }
 }
 main();
