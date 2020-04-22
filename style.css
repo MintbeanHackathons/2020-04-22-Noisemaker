@@ -9,6 +9,8 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  background: none;
+  border: none;
 }
 
 input[type=range] {
