@@ -1,8 +1,20 @@
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   background-color: chartreuse;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+} */
+
+.tape-controls-play {
+  z-index: 1000;
+}
+
+html {
+  background: url(kokomo.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

@@ -44,8 +44,8 @@ playButton.addEventListener(
 audioElement.addEventListener(
   'ended',
   () => {
-    playButton.dataset.playing = 'false';
-    playButton.setAttribute('aria-checked', 'false');
+    playButton.dataset.playing = 'true';
+    playButton.setAttribute('aria-checked', 'true');
   },
   false
 );
