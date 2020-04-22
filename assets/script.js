@@ -1,11 +1,14 @@
 function main() {
-  const synth = new Tone.Synth().toDestination();
+  // Play a sound using Tone.js and its synth instrument
+  function bringTheNoise(note) {
+    // Tone.js documentation https://tonejs.github.io/
+    const synth = new Tone.Synth().toDestination();
+    // Note is passed into bringTheNoise from each button event listener.
+    // -- "8n" means play note for an 8th note.
+    synth.triggerAttackRelease(note, "8n");
+  }
 
-  //   function bringTheNoise() {
-  //     const synth = new Tone.Synth().toDestination();
-  //     synth.triggerAttackRelease("C4", "8n");
-  //   }
-
+  // handles all the event listeners for the buttons
   function buttonEvents() {
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
@@ -13,15 +16,15 @@ function main() {
 
     button1.addEventListener("click", function () {
       console.log("button 1");
-      synth.triggerAttackRelease("C4", "8n");
+      bringTheNoise("C4");
     });
     button2.addEventListener("click", function () {
       console.log("button 2");
-      synth.triggerAttackRelease("C5", "8n");
+      bringTheNoise("C5");
     });
     button3.addEventListener("click", function () {
       console.log("button 3");
-      synth.triggerAttackRelease("C6", "8n");
+      bringTheNoise("C6");
     });
   }
   buttonEvents();
