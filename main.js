@@ -11,8 +11,8 @@ let oscillator, mousedown, minValue, maxValue;
 
 // Helper functions
 const calculateFrequency = (Xpos) => {
-	let min = minValue ? minValue : 10,
-		max = maxValue ? maxValue : 1000;
+	let min = minValue ? minValue : 10, //* this could also be minValue || 10
+		max = maxValue ? maxValue : 1000; //* this could also be minValue || 1000
 	let innerWidth = window.innerWidth * 0.6;
 	return (Xpos / innerWidth) * max + min;
 };
