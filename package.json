@@ -1,0 +1,22 @@
+{
+  "name": "2020-04-22-noisemaker",
+  "version": "1.0.0",
+  "description": "Bored in the House",
+  "main": "boredInTheHouse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandena/2020-04-22-Noisemaker.git"
+  },
+  "author": "Amanda Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amandena/2020-04-22-Noisemaker/issues"
+  },
+  "homepage": "https://github.com/amandena/2020-04-22-Noisemaker#readme",
+  "dependencies": {
+    "web-audio-api": "^0.2.2"
+  }
+}
