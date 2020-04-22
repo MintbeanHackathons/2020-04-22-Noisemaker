@@ -1,3 +1,4 @@
+const notes = ['c4','d4','e4','f4','g4','a4','b4','c5'];
 const sounds = [];
 
 const soundContext = new AudioContext();
@@ -34,6 +35,6 @@ function playSound(idx, options) {
   }
 }
 
-for (let i = 0; i < 7; ++i) {
-  loadSound(`../snd/xylophone${i+1}.mp3`, sounds, i);
+for (let i = 0; i < notes.length; ++i) {
+  loadSound(`../snd/dog_${notes[i]}.mp3`, sounds, i);
 }
