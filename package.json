@@ -1,0 +1,21 @@
+{
+  "name": "2020-04-22-Noisemaker",
+  "version": "1.0.0",
+  "description": "## Prize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yulia-kh/2020-04-22-Noisemaker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulia-kh/2020-04-22-Noisemaker/issues"
+  },
+  "homepage": "https://github.com/yulia-kh/2020-04-22-Noisemaker#readme",
+  "dependencies": {}
+}
