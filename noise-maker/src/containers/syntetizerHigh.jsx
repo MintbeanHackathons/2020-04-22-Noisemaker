@@ -8,7 +8,6 @@ const SynteH = () => {
 
   
   const clickDo = (label) => {
-    console.log(label)
     synth.triggerAttackRelease(label, "8n");
   }
 
