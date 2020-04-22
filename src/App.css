@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#button-grid {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  transform: translate(15%, 15%);
+  background-color: black;
+}
+
+.cell {
+  background-color: gray;
+}
+
+.cell-active {
+  background-color: orange;
+}
