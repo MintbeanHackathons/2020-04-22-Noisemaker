@@ -1,0 +1,53 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	color: #709bab;
+	text-shadow: 2px 2px 3px #ddd;
+}
+
+#theremin {
+	width: 60%;
+	height: 40%;
+	margin: 50px auto;
+	background-color: #d3e0e5;
+	border: 1.5px solid #709bab;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 4px #ddd;
+	cursor: pointer;
+}
+
+.form {
+	width: 40%;
+	padding: 20px;
+	margin: 30px auto;
+	border: 1px solid #acacac;
+	border-radius: 10px;
+}
+
+label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+input {
+	margin: 0 auto;
+	font-family: inherit;
+	font-size: 1rem;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+button {
+	display: block;
+	font-weight: bold;
+	margin: 15px auto;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: white;
+}
