@@ -17,10 +17,35 @@ const useStyles = makeStyles((theme)=>({
 
 var synth = new Synth().toMaster();
 
-function handleClick(e) {
+function handleClickQ(e) {
   e.preventDefault();
   console.log('The link was clicked.');
   synth.triggerAttackRelease("C4", "8n");
+}
+function handleClickW(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
+  synth.triggerAttackRelease("D4", "8n");
+}
+function handleClickE(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
+  synth.triggerAttackRelease("E4", "8n");
+}
+function handleClickU(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
+  synth.triggerAttackRelease("F4", "8n");
+}
+function handleClickI(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
+  synth.triggerAttackRelease("G4", "8n");
+}
+function handleClickO(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
+  synth.triggerAttackRelease("A4", "8n");
 }
 
 function App() {
@@ -40,32 +65,32 @@ function App() {
       <div className={classes.root}>
       <Grid container spacing={6}>
         <Grid item xs>
-          <Paper className={classes.paper} ><Button variant="contained" color="primary" onClick={handleClick} >
+          <Paper className={classes.paper} ><Button variant="contained" color="primary" onClick={handleClickQ} >
         Q
       </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}><Button variant="contained" color="primary">
+          <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickW}>
         W
       </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}><Button variant="contained" color="primary">
+          <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickE}>
         E
       </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}><Button variant="contained" color="primary">
+          <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickU}>
         U
       </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}><Button variant="contained" color="primary">
+          <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickI}>
         I
       </Button></Paper>
         </Grid>
         <Grid item xs>
-          <Paper className={classes.paper}><Button variant="contained" color="primary">
+          <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickO}>
         O
       </Button></Paper>
         </Grid>
