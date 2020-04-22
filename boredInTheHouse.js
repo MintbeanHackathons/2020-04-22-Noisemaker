@@ -27,7 +27,21 @@ playButton.addEventListener('click', function() { // allows play and pause
   }
 }, false)
 
+audioElement.addEventListener('ended', () => { // listens for song ending
+  playButton.dataset.playing = 'false'
+}, false)
 
+// represents how big sound wave is
+const gainNode = audioContext.createGain() 
+
+// connects everything to gainNode
+track.connect(gainNode).connect(audioContext.destination)
+
+const volumeControl = document.querySelector('#volume')
+
+volumeControl.addEventListener('input', function() {
+  gainNode.gain.value = this.value
+}, false)
 
 
 
