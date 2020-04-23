@@ -10,6 +10,10 @@ audioElement.volume = 0.1;
 //connect track to destination
 track.connect(audioCtx.destination);
 
+setTimeout(function () {
+  document.getElementById('kokomo').play();
+}, 1200);
+
 audioElement.addEventListener('timeupdate', (event) => {
   console.log(event);
   let currentTime = event.srcElement.currentTime;
