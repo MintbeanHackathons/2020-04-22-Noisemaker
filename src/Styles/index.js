@@ -1,0 +1,5 @@
+export {default as FlexContainer} from './FlexContainer'
+export {default as Header} from './Header'
+export {default as StyledWhiteKey} from './StyledWhiteKey'
+export {default as KeyboardContainer} from './KeyboardContainer'
+export {default as StyledBlackKey} from './StyledBlackKey'
