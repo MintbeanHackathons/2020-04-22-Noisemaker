@@ -18,7 +18,7 @@ function loadSound(filename, buffer, index) {
   request.send();
 }
 
-function playSound(idx, options) {
+function playSound(idx) {
   const sound = sounds[idx];
   const soundVolume = 1;
 
