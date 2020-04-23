@@ -1,25 +1,26 @@
+// import Tone from './node_modules/tone';
+console.log("good start");
 const Synth= new Tone.Synth();
 Synth.toMaster();
-//Synth.triggerAttackRelease("C4","8n");
+Synth.triggerAttackRelease("C4","8n");
 
-const Green = document.getElementById("green");
-green.addEventListener("mousedown",e=>{
+const Green = document.getElementById('green');
+Green.addEventListener("mousedown",e=>{
   const note = e.target.dataset.note
   Synth.triggerAttackRelease(note,"8n")
 });
 const Blue = document.getElementById("blue");
-blue.addEventListener("mousedown",e=>{
+Blue.addEventListener("mousedown",e=>{
   const note = e.target.dataset.note
   Synth.triggerAttackRelease(note,"8n")
 });
 const Red = document.getElementById("red");
-red.addEventListener("mousedown",e=>{
+Red.addEventListener("mousedown",e=>{
   const note = e.target.dataset.note
   Synth.triggerAttackRelease(note,"8n")
 });
 const Yellow = document.getElementById("yellow");
-yellow.addEventListener("mousedown",e=>{
-  const note = e.target.dataset.note
+Yellow.addEventListener("mousedown",e=>{ const note = e.target.dataset.note
   Synth.triggerAttackRelease(note,"8n")
 });
 
