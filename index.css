@@ -14,6 +14,15 @@ body {
   display: flex;
 }
 
+/* @media screen and (max-width: 600px) {
+  .lyrics-container {
+    width: 80%;
+    margin-left: 4%;
+    font-size: 3rem;
+    display: flex;
+  }
+} */
+
 .lyrics-crawl {
   transition: top 1s;
   /* Position the element so we can adjust the top property in the animation */

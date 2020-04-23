@@ -5,7 +5,7 @@ const audioCtx = new AudioContext();
 // load some sound
 const audioElement = document.querySelector('audio');
 const track = audioCtx.createMediaElementSource(audioElement);
-audioElement.volume = 0.1;
+// audioElement.volume = 0.1;
 
 //connect track to destination
 track.connect(audioCtx.destination);
