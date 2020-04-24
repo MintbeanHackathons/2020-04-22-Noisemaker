@@ -8,12 +8,13 @@
   </head>
   <body>
     <h1>Let's make some noise</h1>
-    <button id="record">Record</button>
+    <div id="record" class='player_buttons'>Record</div>
     Press once to start recording a song, and again to stop recording a song.<br />
-    <button id="play">Play</button>
-    Press to start playback of your recorded song.
+    <div id="play" class='player_buttons'>Play</div>
+    Press to start playback of your recorded song. NOTE: press only once
     <div>
-      Click on the corresponding colored squares to play a tone.  Alternatively, you can also use the following keys to play a tone as well:
+      Click on the colored squares to play its corresponding tone.
+      Alternatively, you can also use the following keys to play a tone as well:
       <ul>
         <li>Q = Green</li>
         <li>W = Blue</li>
@@ -27,6 +28,8 @@
       <div data-note="E4" id="red" class="square"></div>
       <div data-note="F4" id="yellow" class="square"></div>
     </div>
+
+    <a href="https://github.com/carlsopa/2020-04-22-Noisemaker">Github repo</a>
   </body>
   <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
   <script type="text/javascript" src="noise-maker.js"></script>
