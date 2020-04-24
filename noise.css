@@ -20,6 +20,10 @@ li{
 .square {
   width: 150px;
   height: 150px;
+  position: relative;
+}
+.square:active{
+  opacity:.5;
 }
 #green {
   background-color: green;

@@ -88,7 +88,7 @@ document.addEventListener("keydown", (e) => {
     case "w":
       Synth.triggerAttackRelease(Blue.dataset.note, "8n");
       if (recording) {
-        song.push(Blue.dataset.note);
+        song.push(Blue.dataset.note); 
       }
       return;
     case "a":
