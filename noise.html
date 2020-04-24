@@ -7,15 +7,27 @@
     <script type="text/javascript" src="noise-maker.js"></script> -->
   </head>
   <body>
+    <h1>Let's make some noise</h1>
     <button id="record">Record</button>
+    Press once to start recording a song, and again to stop recording a song.<br />
     <button id="play">Play</button>
+    Press to start playback of your recorded song.
+    <div>
+      Click on the corresponding colored squares to play a tone.  Alternatively, you can also use the following keys to play a tone as well:
+      <ul>
+        <li>Q = Green</li>
+        <li>W = Blue</li>
+        <li>A = Red</li>
+        <li>S = Yellow</li>
+      </ul>
+    </div>
     <div id="board">
-      <div data-note="C4" id="green"></div>
-      <div data-note="D4" id="blue"></div>
-      <div data-note="E4" id="red"></div>
-      <div data-note="F4" id="yellow"></div>
+      <div data-note="C4" id="green" class="square"></div>
+      <div data-note="D4" id="blue" class="square"></div>
+      <div data-note="E4" id="red" class="square"></div>
+      <div data-note="F4" id="yellow" class="square"></div>
     </div>
   </body>
   <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
-    <script type="text/javascript" src="noise-maker.js"></script>
+  <script type="text/javascript" src="noise-maker.js"></script>
 </html>

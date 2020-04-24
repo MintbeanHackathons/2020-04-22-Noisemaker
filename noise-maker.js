@@ -1,8 +1,9 @@
 const Synth = new Tone.Synth();
 Synth.toMaster();
-Synth.triggerAttackRelease("C4", "8n");
+//Synth.triggerAttackRelease("C4", "8n");
 
 recording = false;
+playing = false;
 song = [];
 
 const Green = document.getElementById("green");

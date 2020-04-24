@@ -7,8 +7,9 @@
   grid-template-columns: auto auto;
   grid-gap:15px;
   margin:15px;
+  width:330px;
 }
-div {
+.square {
   width: 150px;
   height: 150px;
 }
