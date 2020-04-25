@@ -54,45 +54,46 @@ function App() {
   
   //play a middle 'C' for the duration of an 8th note
   synth.triggerAttackRelease("C4", "8n");
+
   const classes = useStyles();
   return (
     <div className="App" >
-      <Container maxWidth={classes.root}>
+      <Container fixed>
       {/* <h1>@IsmaelTechNow Noise Toy </h1> */}
-      <Typography variant="h1" gutterBottom>
+      <Typography variant="h2" gutterBottom>
       @IsmaelTechNow Noise Toy
       </Typography>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="body1" gutterBottom>
       Now set up to work with mouse press corresponing button. In future iteration will use keyboard keys.
       </Typography>
       <div className={classes.root}>
-      <Grid container spacing={6}>
-        <Grid item xs>
-          <Paper className={classes.paper} ><Button variant="contained" color="primary" onClick={handleClickQ} >
+      <Grid container spacing={1}>
+        <Grid item xs={2}>
+          <Paper className={classes.paper} ><Button variant="contained" color="primary" size="small"  onClick={handleClickQ} >
         Q
       </Button></Paper>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={2}>
           <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickW}>
         W
       </Button></Paper>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={2}>
           <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickE}>
         E
       </Button></Paper>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={2}>
           <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickU}>
         U
       </Button></Paper>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={2}>
           <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickI}>
         I
       </Button></Paper>
         </Grid>
-        <Grid item xs>
+        <Grid item xs={2}>
           <Paper className={classes.paper}><Button variant="contained" color="primary" onClick={handleClickO}>
         O
       </Button></Paper>
@@ -100,6 +101,8 @@ function App() {
         
       </Grid>
       </div>
+
+
       </Container>
     </div>
   );
