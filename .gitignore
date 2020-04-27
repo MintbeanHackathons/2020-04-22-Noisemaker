@@ -1,2 +1,4 @@
 node_modules/
 *.log
+auxiliar/
+.vscode/numbered-bookmarks.json
